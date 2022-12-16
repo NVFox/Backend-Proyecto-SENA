@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("categorias")
-@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE })
+@CrossOrigin("*")
 public class CategoriaController {
     private ICategoriaService categoriaService;
 

@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("ventas")
-@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE })
+@CrossOrigin("*")
 public class VentaController {
     private IVentaService ventaService;
     private VentaMapper ventaMapper;

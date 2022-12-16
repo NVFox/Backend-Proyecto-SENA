@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("carritos")
-@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE })
+@CrossOrigin("*")
 public class CarritoController {
     private ICarritoService carritoService;
     private IOrdenService ordenService;
